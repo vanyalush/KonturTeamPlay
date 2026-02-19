@@ -1,0 +1,32 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@layer components {
+    .headline2{
+        @apply font-bold text-[40px] text-center leading-12.5;
+    }
+    .headline3{
+        @apply font-bold text-[30px] text-center leading-9;
+    }
+    .headline4{
+        @apply font-bold text-[20px] leading-[1.75];
+    }
+    .headline5{
+        @apply font-normal text-[18px] text-center leading-[28px];
+    }
+    .body1{
+        @apply font-extralight text-[16px] text-center leading-[26px];
+    }
+    .label{
+        @apply font-bold text-[16px] text-center leading-[20px];
+    }
+    .btn{
+        @apply w-[122px] h-[42px] bg-blue-950 rounded-[10px] text-white hover:scale-105 active:scale-95
+        transition-transform duration-300 ease-in-out;
+    }
+}
+
+body{
+    background-color: #EDEDED;
+    font-family: 'Arial', sans-serif;
+}

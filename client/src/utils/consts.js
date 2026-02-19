@@ -1,0 +1,5 @@
+export const MAIN_ROUTE='/'
+export const GAMEONE_ROUTE = '/moving/:id'
+export const GAMETWO_ROUTE = '/improv/:id'
+export const GAMETHREE_ROUTE = '/delegation/:id'
+export const GAMEFOUR_ROUTE = '/truths_lie/:id'
