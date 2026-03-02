@@ -26,6 +26,9 @@ app.ws('/', (ws, req) => {
             case "revealAllCard":
                 revealAllCardHandler(ws, msg)
                 break
+            case "updateMode":
+                updateModeHandler(ws, msg)
+                break
         }
     })
     ws.on('close', () => {
@@ -64,6 +67,12 @@ const connectionHandler = (ws, msg) => {
             revealedCount: state.revealedCount
         }))
     }
+    if(state.mode){
+        ws.send(JSON.stringify({
+            method: "syncMode",
+            mode: state.mode
+        }))
+    }
     if(state.order){
         ws.send(JSON.stringify({
             method: "syncOrder",
@@ -73,7 +82,7 @@ const connectionHandler = (ws, msg) => {
 }
 
 const revealCardHandler = (ws, msg) => {
-    const {sessionId, revealedCount} = msg;
+    const {sessionId, revealedCount, cardId} = msg;
     if (sessionState[sessionId]) {
         sessionState[sessionId].revealedCount = revealedCount;
     }
@@ -86,6 +95,7 @@ const revealCardHandler = (ws, msg) => {
         ) {
             client.send(JSON.stringify({
                 method: "syncRevealed",
+                cardId: cardId,
                 revealedCount: revealedCount
             }));
         }
@@ -131,6 +141,25 @@ const updateOrderHandler = (ws, msg) => {
             }));
         }
     })
+}
+const updateModeHandler = (ws, msg) => {
+    const {sessionId, mode} = msg;
+
+    if (sessionState[sessionId]) {
+        sessionState[sessionId].mode = mode;
+    }
+    aWss.clients.forEach(client => {
+        if (
+            client.readyState === WebSocket.OPEN &&
+            client.sessionId === sessionId &&
+            client !== ws
+        ) {
+            client.send(JSON.stringify({
+                method: "syncMode",
+                mode: mode,
+            }));
+        }
+    });
 }
 
 
