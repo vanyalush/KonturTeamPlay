@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3c02bf99-626d-4175-870e-f82f8c1e4341" name="Changes" comment="two game" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+        <option value="JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="39ITFXhdBGHBt5QH27pN9G5fh7g" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Node.js.App.jsx.executor&quot;: &quot;Debug&quot;,
+    &quot;Node.js.card.jsx.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rylllin/WebstormProjects/webSocketApp/client/src/pages&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/pages" />
+      <recent name="$PROJECT_DIR$/client/src/components/Games" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/pages/gameTwo/assets" />
+      <recent name="$PROJECT_DIR$/client/src/pages/gameOne/data" />
+      <recent name="$PROJECT_DIR$/client/src/pages/gameOne/assets" />
+      <recent name="$PROJECT_DIR$/client/src/components/assets" />
+      <recent name="$PROJECT_DIR$/client/src/pages/gameFour" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-WS-253.30387.83" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3c02bf99-626d-4175-870e-f82f8c1e4341" name="Changes" comment="" />
+      <created>1770382481493</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1770382481493</updated>
+      <workItem from="1770382482514" duration="2587000" />
+      <workItem from="1770466121253" duration="3835000" />
+      <workItem from="1770539737453" duration="9637000" />
+      <workItem from="1770641078263" duration="7851000" />
+      <workItem from="1770732080968" duration="5614000" />
+      <workItem from="1770750750317" duration="11755000" />
+      <workItem from="1770819988469" duration="1245000" />
+      <workItem from="1770821246729" duration="7000" />
+      <workItem from="1770821259402" duration="16329000" />
+      <workItem from="1770885156352" duration="10748000" />
+      <workItem from="1770923377674" duration="13672000" />
+      <workItem from="1770987815286" duration="217000" />
+      <workItem from="1771184260499" duration="14735000" />
+      <workItem from="1771333358616" duration="4158000" />
+      <workItem from="1771352939211" duration="7000" />
+      <workItem from="1771352971108" duration="2071000" />
+      <workItem from="1771424878171" duration="1437000" />
+      <workItem from="1771426590491" duration="5546000" />
+      <workItem from="1771489775403" duration="13103000" />
+      <workItem from="1771749012522" duration="230000" />
+      <workItem from="1771842293191" duration="904000" />
+      <workItem from="1771934683385" duration="7841000" />
+      <workItem from="1772032709326" duration="2047000" />
+      <workItem from="1772103730157" duration="70000" />
+      <workItem from="1772180039256" duration="6142000" />
+      <workItem from="1772373752685" duration="1238000" />
+      <workItem from="1772464692834" duration="344000" />
+    </task>
+    <task id="LOCAL-00001" summary="two game">
+      <option name="closed" value="true" />
+      <created>1772464988657</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1772464988657</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="two game" />
+    <option name="LAST_COMMIT_MESSAGE" value="two game" />
+  </component>
+</project>
