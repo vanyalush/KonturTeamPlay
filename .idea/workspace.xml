@@ -4,7 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3c02bf99-626d-4175-870e-f82f8c1e4341" name="Changes" comment="two game" />
+    <list default="true" id="3c02bf99-626d-4175-870e-f82f8c1e4341" name="Changes" comment="game two">
+      <change afterPath="$PROJECT_DIR$/client/src/components/Cursors.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/gameFour/Game.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/gameFour/PlayerBarFour.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/gameOne/SavePageOne.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/gameOne/assets/bxs-share.svg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/UsernameModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UsernameModal.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameFour/GameFour.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameFour/GameFour.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/GameOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/GameOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/Motivators.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/Motivators.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useMotivators.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useMotivators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useReveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useReveal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameTwo/GameTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameTwo/GameTwo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/GameState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/GameState.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/consts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -23,6 +47,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;vanyalush&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/vanyalush/KonturTeamPlay.git&quot;,
+    &quot;accountId&quot;: &quot;c2d461dd-4260-44fe-82bb-ba3cd1e28a9d&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -44,7 +80,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rylllin/WebstormProjects/webSocketApp/client/src/pages&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/rylllin/WebstormProjects/webSocketApp/client/src/pages/gameTwo&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -57,15 +93,16 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/pages/gameTwo" />
       <recent name="$PROJECT_DIR$/client/src/pages" />
       <recent name="$PROJECT_DIR$/client/src/components/Games" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/components/hooks" />
+      <recent name="$PROJECT_DIR$/client/src/components" />
+      <recent name="$PROJECT_DIR$/client/src/pages/gameOne/assets" />
       <recent name="$PROJECT_DIR$/client/src/pages/gameTwo/assets" />
       <recent name="$PROJECT_DIR$/client/src/pages/gameOne/data" />
-      <recent name="$PROJECT_DIR$/client/src/pages/gameOne/assets" />
-      <recent name="$PROJECT_DIR$/client/src/components/assets" />
-      <recent name="$PROJECT_DIR$/client/src/pages/gameFour" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -108,7 +145,19 @@
       <workItem from="1772103730157" duration="70000" />
       <workItem from="1772180039256" duration="6142000" />
       <workItem from="1772373752685" duration="1238000" />
-      <workItem from="1772464692834" duration="344000" />
+      <workItem from="1772464692834" duration="3753000" />
+      <workItem from="1772642469577" duration="2339000" />
+      <workItem from="1772789184293" duration="878000" />
+      <workItem from="1773071615858" duration="9591000" />
+      <workItem from="1773248646144" duration="2589000" />
+      <workItem from="1773595812494" duration="18172000" />
+      <workItem from="1773754109188" duration="6644000" />
+      <workItem from="1773977222677" duration="164000" />
+      <workItem from="1774010813239" duration="5076000" />
+      <workItem from="1774253830608" duration="3603000" />
+      <workItem from="1774457876016" duration="205000" />
+      <workItem from="1774533145795" duration="100000" />
+      <workItem from="1774788729517" duration="3121000" />
     </task>
     <task id="LOCAL-00001" summary="two game">
       <option name="closed" value="true" />
@@ -118,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772464988657</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="game two">
+      <option name="closed" value="true" />
+      <created>1772465235606</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1772465235606</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,6 +183,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="two game" />
-    <option name="LAST_COMMIT_MESSAGE" value="two game" />
+    <MESSAGE value="game two" />
+    <option name="LAST_COMMIT_MESSAGE" value="game two" />
   </component>
 </project>

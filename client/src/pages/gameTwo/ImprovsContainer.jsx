@@ -1,6 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import {arrayMove, rectSortingStrategy, SortableContext} from "@dnd-kit/sortable";
-import {closestCenter, DndContext, PointerSensor} from "@dnd-kit/core";
+import {closestCenter, DndContext} from "@dnd-kit/core";
 import {SortableImprov} from "./SortableImprov.jsx";
 import gameState from "../../store/GameState.js";
 import {observer} from "mobx-react-lite";

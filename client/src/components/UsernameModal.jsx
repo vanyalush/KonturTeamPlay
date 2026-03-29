@@ -40,6 +40,9 @@ const UsernameModal = ({onConnect, name}) => {
                     <button
                         type="submit"
                         className="w-full btn"
+                        style={{
+                            animation: "glowPulse 1.5s ease-in-out infinite"
+                        }}
                     >
                         Начать игру
                     </button>

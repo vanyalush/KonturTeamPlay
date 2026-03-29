@@ -2,11 +2,16 @@
 import gameState from "../../../store/GameState.js";
 import {arrayMove} from "@dnd-kit/sortable";
 import React, {useEffect, useState} from "react";
+import {reaction} from "mobx";
 
 export const useMotivators = (data, revealedCount) => {
     const [items, setItems] = useState(() =>
         data.slice(0, revealedCount).map(item => ({ ...item }))
     );
+
+    useEffect(() => {
+        gameState.setSavedMotivators(items);
+    }, [items]);
 
     useEffect(() => {
         const currentIds = items.map(i => i.id);
@@ -15,6 +20,21 @@ export const useMotivators = (data, revealedCount) => {
 
         setItems(prev => [...prev, ...newCards]);
     }, [data, revealedCount]);
+
+    useEffect(() => {
+        const dispose = reaction(
+            () => gameState.syncOrder,
+            (syncOrder) => {
+                if (!syncOrder) return;
+                const orderItems = syncOrder
+                    .map(id => data.find(i => i.id === id))
+                    .filter(Boolean);
+                setItems(orderItems);
+            },
+            { fireImmediately: true }
+        );
+        return () => dispose();
+    }, [data]);
 
     const handleDragEnd = (event) => {
         if(!gameState.isEditing || !gameState.socket) return;
@@ -36,26 +56,6 @@ export const useMotivators = (data, revealedCount) => {
             });
         }
     }
-
-    useEffect(() => {
-        const socket = gameState.socket;
-        if(!socket) return;
-
-        const handleMessage = (e) => {
-            const msg = JSON.parse(e.data);
-            if(msg.method === "syncOrder") {
-                const orderItems = msg.order.map(id =>
-                    data.find(i => i.id === id)
-                ).filter(Boolean);
-
-                setItems(orderItems);
-            }
-        };
-        socket.addEventListener("message", handleMessage);
-        return () => {
-            socket.removeEventListener("message", handleMessage);
-        };
-    }, [data])
 
     return {items, handleDragEnd};
 }

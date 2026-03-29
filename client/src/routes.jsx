@@ -2,10 +2,21 @@ import Hero from "./pages/Hero.jsx";
 import gameOne from "./pages/gameOne/GameOne.jsx";
 import gameTwo from "./pages/gameTwo/GameTwo.jsx";
 import gameThree from "./pages/gameThree/GameThree.jsx";
-import {GAMEFOUR_ROUTE, GAMEONE_ROUTE, GAMETHREE_ROUTE, GAMETWO_ROUTE, MAIN_ROUTE} from "./utils/consts.js";
+import gameFour from "./pages/gameFour/GameFour.jsx";
+import SavePageOne from "./pages/gameOne/SavePageOne.jsx";
+import game from "./pages/gameFour/Game.jsx";
+import {
+    FOUR_ONLYGAME_ROUTE,
+    GAMEFOUR_ROUTE,
+    GAMEONE_ROUTE,
+    GAMETHREE_ROUTE,
+    GAMETWO_ROUTE,
+    MAIN_ROUTE,
+    ONESAVE_ROUTE
+} from "./utils/consts.js";
 import {Navigate} from "react-router-dom";
 import {generateGameId} from "./utils/genarateId.js";
-import gameFour from "./pages/gameFour/GameFour.jsx";
+
 
 const createLauncher = (gameRoute) => {
     return () => {
@@ -24,6 +35,10 @@ export const routes = [
         Component: gameOne
     },
     {
+        path: ONESAVE_ROUTE,
+        Component: SavePageOne
+    },
+    {
         path: GAMETWO_ROUTE,
         Component: gameTwo
     },
@@ -34,6 +49,10 @@ export const routes = [
     {
         path: GAMEFOUR_ROUTE,
         Component: gameFour
+    },
+    {
+        path: FOUR_ONLYGAME_ROUTE,
+        Component: game
     },
     {
         path: '/moving',

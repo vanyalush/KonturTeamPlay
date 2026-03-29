@@ -5,8 +5,15 @@ class gameState {
     sessionId = null
     socket = null
     revealedCount = 0
+    syncOrder = null
     players = []
     isEditing = false
+    savedMotivators = []
+    timerDuration = 90
+    timeLeft = 0
+    cursors = {}
+    readyPlayers = []
+
 
     constructor() {
         makeAutoObservable(this)
@@ -34,6 +41,13 @@ class gameState {
     setRevealed(count){
         this.revealedCount = count;
     }
+    setSyncOrder(order){
+        this.syncOrder = order;
+    }
+
+    setSavedMotivators(items) {
+        this.savedMotivators = items;
+    }
 
     addPlayer(username){
         if(!this.players.includes(username)){
@@ -58,6 +72,26 @@ class gameState {
     }
     toggleEditing(){
         this.isEditing = !this.isEditing;
+    }
+    setTimerDuration(seconds){
+        this.timerDuration = seconds;
+    }
+    setTimeLeft(t){
+        this.timeLeft = t;
+    }
+    setCursor(username, x, y){
+        this.cursors[username] = {x, y};
+    }
+    removeCursor(username) {
+        delete this.cursors[username];
+    }
+    addReadyPlayer(username){
+        if(!this.readyPlayers.includes(username)){
+            this.readyPlayers.push(username);
+        }
+    }
+    removeReadyPlayer(username) {
+        this.readyPlayers = this.readyPlayers.filter(p => p !== username);
     }
 }
 

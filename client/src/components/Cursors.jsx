@@ -1,6 +1,6 @@
 import React from 'react';
 import {observer} from "mobx-react-lite";
-import gameState from "../../store/GameState.js";
+import gameState from "../store/GameState.js";
 
 const Cursors = observer(() => {
     return (

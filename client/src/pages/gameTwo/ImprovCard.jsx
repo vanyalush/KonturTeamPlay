@@ -51,7 +51,6 @@ const ImprovCard = ({img, isBlind, id}) => {
                     position: "relative",
                 }}
             >
-                {/* Лицевая сторона */}
                 <div
                     style={{ backfaceVisibility: "hidden" }}
                     className="absolute inset-0 p-[2px] rounded-lg bg-gradient-to-r from-[#a97fff] to-[#cf70ac]"
@@ -61,7 +60,6 @@ const ImprovCard = ({img, isBlind, id}) => {
                     </div>
                 </div>
 
-                {/* Обратная сторона */}
                 <div
                     style={{ backfaceVisibility: "hidden", transform: "rotateY(180deg)" }}
                     className="absolute inset-0 p-[2px] rounded-lg bg-gradient-to-r from-[#a97fff] to-[#cf70ac]"

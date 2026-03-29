@@ -2,6 +2,8 @@ import gameState from "../../../store/GameState.js";
 import {motivators_data} from "../data/MotivatorsData.jsx";
 
 export const useReveal = (data, sessionId) => {
+    let clickTimer = null;
+
     const revealHandler = () => {
         if(gameState.revealedCount < motivators_data.length) {
             gameState.revealNext();
@@ -22,5 +24,13 @@ export const useReveal = (data, sessionId) => {
             totalCount: motivators_data.length
         }))
     }
-    return { revealHandler, revealAllHandler }
+
+    const handleClick = () => {
+        clickTimer = setTimeout(() => {revealHandler(), 200})
+    }
+    const handleDoubleClick = () => {
+        clearTimeout(clickTimer);
+        revealAllHandler();
+    };
+    return { handleClick, handleDoubleClick }
 }

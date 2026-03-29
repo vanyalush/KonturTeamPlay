@@ -5,18 +5,26 @@ import React, {useEffect, useState} from 'react';
 
 import NavBar from "../../components/NavBar.jsx";
 import gameState from "../../store/GameState.js";
-import {useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import UsernameModal from "../../components/UsernameModal.jsx";
 import Motivators from "./Motivators.jsx";
 import {observer} from "mobx-react-lite";
 import {motivators_data} from "./data/MotivatorsData.jsx";
 import {useReveal} from "./hooks/useReveal.js";
-
+import Cursors from "../../components/Cursors.jsx";
+import { throttle } from "lodash";
+import SavePageOne from "./SavePageOne.jsx";
 
 const GameOne = observer(() => {
     const [modal, setModal] = useState(true)
     const params = useParams();
-    const {revealHandler, revealAllHandler} = useReveal(motivators_data, params.id);
+    const isFinished = gameState.revealedCount >= motivators_data.length;
+
+    const {handleClick, handleDoubleClick} = useReveal(motivators_data, params.id);
+
+    const getSaveRoute = () => {
+        if(location.pathname.includes('moving')) return `/moving/${params}/save`
+    }
 
 
     const connectHandler = (username) => {
@@ -26,6 +34,23 @@ const GameOne = observer(() => {
 
         setModal(false);
     }
+    useEffect(() => {
+        if(!gameState.socket) return;
+
+        const handleMouseMove = throttle((e) => {
+            gameState.socket.send(JSON.stringify({
+                method: "cursorMove",
+                sessionId: gameState.sessionId,
+                username: gameState.username,
+                x: e.clientX / window.innerWidth,
+                y: e.clientY / window.innerHeight,
+            }))
+        }, 50)
+
+        window.addEventListener("mousemove", handleMouseMove);
+        return () => window.removeEventListener("mousemove", handleMouseMove);
+
+    }, [gameState.socket])
 
     useEffect(() => {
         if(gameState.username){
@@ -52,6 +77,7 @@ const GameOne = observer(() => {
                     case "disconnection":
                         console.log(`Пользователь ${msg.username} отлючился`);
                         gameState.removePlayer(msg.username);
+                        gameState.removeCursor(msg.username);
                         break;
                     case "updatePlayers":
                         console.log('Обновлён список игроков:', msg.players);
@@ -60,6 +86,13 @@ const GameOne = observer(() => {
                     case "syncRevealed":
                         console.log(`Синхронизация: открыто карт - ${msg.revealedCount}`);
                         gameState.setRevealed(msg.revealedCount);
+                        break;
+                    case "syncOrder":
+                        console.log(`Синхронизация порядка:`, msg.order);
+                        gameState.setSyncOrder(msg.order);
+                        break;
+                    case "syncCursor":
+                        gameState.setCursor(msg.username, msg.x, msg.y);
                         break;
                 }
             }
@@ -75,6 +108,7 @@ const GameOne = observer(() => {
 
     return (
         <div className="flex flex-col items-center ">
+            <Cursors/>
             {modal && ( <UsernameModal onConnect={connectHandler} name={"Moving Motivators"}/>)}
 
             <NavBar/>
@@ -88,15 +122,28 @@ const GameOne = observer(() => {
                     <p className="headline5 mt-5 mr-auto">
                         Нажмите на кнопку справа, чтобы открыть карту. Двойной клик откроет все карты.
                     </p>
-                    <button onClick={revealHandler} onDoubleClick={revealAllHandler} className="flex items-center justify-center btn my-2 label mt-6">
-                        Открыть
+                    <button
+                        onClick={handleClick}
+                        onDoubleClick={handleDoubleClick}
+                        style={{animation: !isFinished ? "glowPulse 1.5s ease-in-out infinite" : "none"}}
+                        className="flex items-center justify-center btn my-2 label mt-6"
+                    >
+                        <span
+                            key={isFinished ? "finish" : "open"}
+                            style={{ animation: "glowPulse 0.4s ease forwards" }}
+                        >
+                            {isFinished ? (
+                                <Link to={getSaveRoute()}>
+                                    Завершить
+                                </Link>
+                                ) : "Открыть"}
+                        </span>
                     </button>
                 </div>
 
                 <Motivators
                     data={motivators_data}
                     revealedCount={gameState.revealedCount}/>
-
             </div>
                 )}
         </div>
