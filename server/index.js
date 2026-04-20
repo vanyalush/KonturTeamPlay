@@ -54,6 +54,15 @@ app.ws('/', (ws, req) => {
             case "submitVote":
                 submitVoteHandler(ws, msg);
                 break;
+            case "delegationStartVoting":
+                delegationStartVotingHandler(ws, msg);
+                break;
+            case "delegationVote":
+                delegationVoteHandler(ws, msg);
+                break;
+            case "delegationAgree":
+                delegationAgreeHandler(ws, msg);
+                break;
         }
     })
     ws.on('close', () => {
@@ -367,5 +376,54 @@ const submitVoteHandler = (ws, msg) => {
                 });
             }
         }, 5000);
+    }
+};
+
+const DELEGATION_SCENARIOS = [
+    "Инженер выбирает библиотеку для нового сервиса. Опыта с этой задачей нет, но общий опыт есть.",
+    "Дизайнер предлагает полностью переработать UI главной страницы продукта.",
+    "Менеджер хочет нанять нового сотрудника в команду без согласования с тимлидом.",
+    "Разработчик решает перенести дедлайн задачи на неделю из-за технических сложностей.",
+    "Команда хочет перейти на новый стек технологий для следующего проекта.",
+];
+
+const delegationStartVotingHandler = (ws, msg) => {
+    const { sessionId, scenario, scenarioIndex } = msg;
+    sessionState[sessionId].delegationVotes = {};
+    broadcastToSession(sessionId, { method: "startVoting", scenario, scenarioIndex });
+};
+
+const delegationVoteHandler = (ws, msg) => {
+    const { sessionId, username, level } = msg;
+    if (!sessionState[sessionId].delegationVotes) {
+        sessionState[sessionId].delegationVotes = {};
+    }
+    sessionState[sessionId].delegationVotes[username] = level;
+
+    const votedCount = Object.keys(sessionState[sessionId].delegationVotes).length;
+    broadcastToSession(sessionId, { method: "syncDelegationVotes", votedCount });
+
+    if (votedCount === sessions[sessionId].size) {
+        broadcastToSession(sessionId, {
+            method: "startReveal",
+            votes: sessionState[sessionId].delegationVotes
+        });
+    }
+};
+
+const delegationAgreeHandler = (ws, msg) => {
+    const { sessionId, agreedLevel, scenarioIndex, isLast, results } = msg;
+
+    if (isLast) {
+        broadcastToSession(sessionId, { method: "startResults", results });
+    } else {
+        const nextIndex = scenarioIndex + 1;
+        broadcastToSession(sessionId, {
+            method: "startNextScenario",
+            scenario: DELEGATION_SCENARIOS[nextIndex],
+            scenarioIndex: nextIndex,
+            prevVotes: sessionState[sessionId].delegationVotes,
+            agreedLevel
+        });
     }
 };

@@ -5,27 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c02bf99-626d-4175-870e-f82f8c1e4341" name="Changes" comment="game two">
-      <change afterPath="$PROJECT_DIR$/client/src/components/Cursors.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/gameFour/Game.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/gameFour/PlayerBarFour.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/gameOne/SavePageOne.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/pages/gameOne/assets/bxs-share.svg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/pages/gameThree/DelegationGame.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/NavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/UsernameModal.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/UsernameModal.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameFour/GameFour.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameFour/GameFour.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/GameOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/GameOne.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/Motivators.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/Motivators.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useMotivators.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useMotivators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useReveal.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/hooks/useReveal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameTwo/GameTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameTwo/GameTwo.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovCard.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameTwo/ImprovsContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameThree/GameThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameThree/GameThree.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/store/GameState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/GameState.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/consts.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
     </list>
@@ -39,8 +23,8 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
-        <option value="JavaScript File" />
         <option value="JSX File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -67,32 +51,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Node.js.App.jsx.executor&quot;: &quot;Debug&quot;,
-    &quot;Node.js.card.jsx.executor&quot;: &quot;Debug&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/rylllin/WebstormProjects/webSocketApp/client/src/pages/gameTwo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Node.js.App.jsx.executor": "Debug",
+    "Node.js.card.jsx.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "main",
+    "javascript.preferred.runtime.type.id": "node",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "/Users/rylllin/WebstormProjects/webSocketApp/client/src/pages/gameThree",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/src/pages/gameThree" />
       <recent name="$PROJECT_DIR$/client/src/pages/gameTwo" />
       <recent name="$PROJECT_DIR$/client/src/pages" />
       <recent name="$PROJECT_DIR$/client/src/components/Games" />
@@ -157,7 +142,12 @@
       <workItem from="1774253830608" duration="3603000" />
       <workItem from="1774457876016" duration="205000" />
       <workItem from="1774533145795" duration="100000" />
-      <workItem from="1774788729517" duration="3121000" />
+      <workItem from="1774788729517" duration="8292000" />
+      <workItem from="1775461479419" duration="7769000" />
+      <workItem from="1775720906828" duration="3072000" />
+      <workItem from="1775725260611" duration="1448000" />
+      <workItem from="1775734122642" duration="3042000" />
+      <workItem from="1776587326887" duration="3443000" />
     </task>
     <task id="LOCAL-00001" summary="two game">
       <option name="closed" value="true" />

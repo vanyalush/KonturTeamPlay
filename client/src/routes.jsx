@@ -4,9 +4,11 @@ import gameTwo from "./pages/gameTwo/GameTwo.jsx";
 import gameThree from "./pages/gameThree/GameThree.jsx";
 import gameFour from "./pages/gameFour/GameFour.jsx";
 import SavePageOne from "./pages/gameOne/SavePageOne.jsx";
-import game from "./pages/gameFour/Game.jsx";
+import game4 from "./pages/gameFour/Game.jsx";
+import DelegationGame from "./pages/gameThree/DelegationGame.jsx";
 import {
     FOUR_ONLYGAME_ROUTE,
+    THREE_ONLYGAME_ROUTE,
     GAMEFOUR_ROUTE,
     GAMEONE_ROUTE,
     GAMETHREE_ROUTE,
@@ -52,7 +54,11 @@ export const routes = [
     },
     {
         path: FOUR_ONLYGAME_ROUTE,
-        Component: game
+        Component: game4
+    },
+    {
+        path: THREE_ONLYGAME_ROUTE,
+        Component: DelegationGame
     },
     {
         path: '/moving',

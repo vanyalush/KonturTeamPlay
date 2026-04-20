@@ -7,7 +7,7 @@ const Header = () => {
         <div className="w-full h-15 bg-white flex items-center justify-center">
             <div className="w-9/12">
                 <Link class="headline4" to={MAIN_ROUTE}>
-                    Контур<span className="bg-gradient-to-r from-[#a97fff] to-[#cf70ac] bg-clip-text text-transparent">ТипПлей</span>
+                    Контур<span className="bg-gradient-to-r from-[#a97fff] to-[#cf70ac] bg-clip-text text-transparent">ТимПлей</span>
                 </Link>
             </div>
         </div>
