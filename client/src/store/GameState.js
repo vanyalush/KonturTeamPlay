@@ -96,3 +96,4 @@ class gameState {
 }
 
 export default new gameState();
+

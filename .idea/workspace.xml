@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c02bf99-626d-4175-870e-f82f8c1e4341" name="Changes" comment="game two">
-      <change afterPath="$PROJECT_DIR$/client/src/pages/gameThree/DelegationGame.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/src/.env.production" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameFour/Game.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameFour/Game.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameFour/GameFour.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameFour/GameFour.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameOne/GameOne.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameOne/GameOne.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameThree/DelegationGame.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameThree/DelegationGame.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/pages/gameThree/GameThree.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameThree/GameThree.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/routes.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/routes.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/utils/consts.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/utils/consts.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/server/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/pages/gameTwo/GameTwo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/pages/gameTwo/GameTwo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/GameState.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/GameState.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +149,7 @@
       <workItem from="1775720906828" duration="3072000" />
       <workItem from="1775725260611" duration="1448000" />
       <workItem from="1775734122642" duration="3042000" />
-      <workItem from="1776587326887" duration="3443000" />
+      <workItem from="1776587326887" duration="6064000" />
     </task>
     <task id="LOCAL-00001" summary="two game">
       <option name="closed" value="true" />
@@ -165,7 +167,15 @@
       <option name="project" value="LOCAL" />
       <updated>1772465235606</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="game two">
+      <option name="closed" value="true" />
+      <created>1776697738997</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1776697738997</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

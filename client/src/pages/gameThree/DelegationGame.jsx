@@ -36,7 +36,7 @@ const DelegationGame = observer(() => {
 
     useEffect(() => {
         if (gameState.username) {
-            const socket = new WebSocket(`ws://localhost:5001/`);
+            const socket = new WebSocket(import.meta.env.VITE_WS_URL || "ws://localhost:5001/");
             gameState.setSocket(socket);
 
             socket.onopen = () => {

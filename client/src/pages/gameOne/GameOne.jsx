@@ -13,7 +13,7 @@ import {motivators_data} from "./data/MotivatorsData.jsx";
 import {useReveal} from "./hooks/useReveal.js";
 import Cursors from "../../components/Cursors.jsx";
 import { throttle } from "lodash";
-import SavePageOne from "./SavePageOne.jsx";
+
 
 const GameOne = observer(() => {
     const [modal, setModal] = useState(true)
@@ -54,7 +54,7 @@ const GameOne = observer(() => {
 
     useEffect(() => {
         if(gameState.username){
-            const socket = new WebSocket(`ws://localhost:5001/`);
+            const socket = new WebSocket(import.meta.env.VITE_WS_URL || "ws://localhost:5001/");
             gameState.setSocket(socket);
 
             gameState.clearPlayers();
