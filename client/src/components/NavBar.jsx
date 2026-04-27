@@ -75,7 +75,7 @@ const NavBar = observer(() => {
                 <div className="w-7/12 h-7 bg-white flex items-center justify-between rounded-[5px] mr-3"
                      onClick={handleCopy}
                 >
-                    <p className="body2 pl-1">
+                    <p className="body2 pl-3">
                         {currentUrl}
                     </p>
                     <img src={copy} alt="copy" className="scale-120 mr-2"/>
