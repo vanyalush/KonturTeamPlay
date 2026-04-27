@@ -69,13 +69,13 @@ const NavBar = observer(() => {
                 </div>
             )}
             <div className="w-6/12 h-12 flex flex-row justify-between items-center bg-gray-300 mt-6 rounded-[10px]">
-                <p className="headline5 pl-6">
+                <p className="headline5 pl-1">
                     ссылка для участников
                 </p>
-                <div className="w-6/12 h-7 bg-white flex items-center justify-between rounded-[5px] mr-3"
+                <div className="w-7/12 h-7 bg-white flex items-center justify-between rounded-[5px] mr-3"
                      onClick={handleCopy}
                 >
-                    <p className="body2 pl-3">
+                    <p className="body2 pl-1">
                         {currentUrl}
                     </p>
                     <img src={copy} alt="copy" className="scale-120 mr-2"/>
