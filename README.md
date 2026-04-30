@@ -49,7 +49,7 @@ npm run dev
 ```bash
 cd server
 npm install
-node index.js
+npm run dev
 ```
 
 ## Деплой
